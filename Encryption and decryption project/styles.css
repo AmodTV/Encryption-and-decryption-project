@@ -1,0 +1,16 @@
+*{ 
+    margin: 0; 
+    padding: 0; 
+}
+a{
+    color: yellow;
+    text-decoration: none;
+    font-size: 100px;
+    
+}
+#title{
+    padding: 2px;
+    text-align: center;
+    width:100%;
+    background-color: black;
+}
