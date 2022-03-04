@@ -5,20 +5,33 @@
 </head>
 
 <body>
-    <p> Enter the text you want to encrypt and the key value is how many letters you want each letter to shift. 
-        <br> 
-        For e.g., 
-        <br>
-        If the text is 'Hello' and Key is '1' then the encrypted text comes out to be 'Ifmmp' keeping the case of the sentence as it is.</p>
     <div id="title">
         <a href="index.html">Encyption and decryption</a>
     </div>
-    <h1> Encryption </h1>
-    <span>Text: </span>
-    <input type="text">
-    <br><br>
-    <span> Key value: </span>
-    <input type="text">
+    <div id="instruction">
+        <p style="font-size:30px; font-weight:bolder;margin-bottom: 15px;">How to use:</p>
+        <p> Enter the text you want to encrypt and the key value is how many letters you want each letter to shift.
+            <br>
+            For e.g.,
+            <br>
+            If the text is <span id="highlight">'Hello'</span> and Key is <span id="highlight">'1'</span> then the
+            encrypted text comes out to be <span id="highlight">'Ifmmp'</span> keeping the case of
+            the sentence as it is.
+        </p>
+    </div>
+
+    <div style="margin-top:30px;">
+        <h1 style="margin-left:5px;"> Encryption </h1>
+        <div style="margin-top:15px; margin-left:5px;">
+            <span>Plain Text: </span>
+            <input type="text">
+            <span style="margin-left:60px;">Encypted value: </span>
+            <input type="text" style="border:none;" name="disable_field" disabled>
+            <br><br>
+            <span> Key value: </span>
+            <input type="text">
+        </div>
+    </div>
 </body>
 
 </html>

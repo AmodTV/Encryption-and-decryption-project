@@ -8,9 +8,22 @@ a{
     font-size: 100px;
     
 }
+input{
+    padding: 0.33%;
+}
 #title{
     padding: 2px;
     text-align: center;
     width:100%;
     background-color: black;
+}
+#instruction{
+    margin-top: 15px;
+    margin-left: 5px;
+    font-size: 20px;
+}
+#highlight{
+    background-color: black;
+    color: yellow;
+    padding: 5px;
 }
