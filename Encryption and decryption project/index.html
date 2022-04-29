@@ -2,12 +2,15 @@
 
 <head>
     <link rel="stylesheet" href="styles.css">
+    <script src="code.js"></script>
 </head>
 
 <body>
     <div id="title">
         <a href="index.html">Encyption and decryption</a>
     </div>
+    <h1 style="margin-left:35%; margin-top: 3%; font-size: 80px;"> Encryption </h1>
+    <div id = "Encrypt"> 
     <div id="instruction">
         <p style="font-size:30px; font-weight:bolder;margin-bottom: 15px;">How to use:</p>
         <p> Enter the text you want to encrypt and the key value is how many letters you want each letter to shift.
@@ -16,22 +19,53 @@
             <br>
             If the text is <span id="highlight">'Hello'</span> and Key is <span id="highlight">'1'</span> then the
             encrypted text comes out to be <span id="highlight">'Ifmmp'</span> keeping the case of
+            the sentence as it is. It will only be able to Encrypt the characters(i.e., A-Z and a-z).
+        </p>
+    </div>
+
+    <div style="margin-top:30px;">
+        
+        <div style="margin-top:15px; margin-left:5px;">
+            <span>Plain Text: </span>
+            <input type="text" id="plText">
+            <span style="margin-left:60px;">Encypted value: </span>
+            <span style="border: 0px;" id = "print"></span>
+            <br><br>
+            <span> Key value: </span>
+            <input type="text" id="key"><br>
+            <button onclick="convert()"> <b>Convert</b></button>
+        </div>
+    </div>
+</div>
+
+<h1 style="margin-left:35%; margin-top: 15%;font-size: 80px;"> Decryption </h1>
+<div id = "Decrypt">
+    <div id="instruction">
+        <p style="font-size:30px; font-weight:bolder;margin-bottom: 15px;">How to use:</p>
+        <p> Enter the text you want to decrypt and the key value is how many letters you want each letter to shift.
+            <br>
+            For e.g.,
+            <br>
+            If the text is <span id="highlight">'Ifmmp'</span> and Key is <span id="highlight">'1'</span> then the
+            encrypted text comes out to be <span id="highlight">'Hello'</span> keeping the case of
             the sentence as it is.
         </p>
     </div>
 
     <div style="margin-top:30px;">
-        <h1 style="margin-left:5px;"> Encryption </h1>
         <div style="margin-top:15px; margin-left:5px;">
-            <span>Plain Text: </span>
-            <input type="text">
-            <span style="margin-left:60px;">Encypted value: </span>
-            <input type="text" style="border:none;" name="disable_field" disabled>
+            <span>Encrypted Text: </span>
+            <input type="text" id="encrypted">
+            <span style="margin-left:60px;">Decrypted value: </span>
+            <span style="border: 0px;" id = "print1"></span>
             <br><br>
-            <span> Key value: </span>
-            <input type="text">
+            <span style="margin-left:4.9%"> Key value: </span>
+            <input type="text" id="key1"><br>
+            <button onclick="convert1()"> <b>Convert</b></button>
         </div>
     </div>
+</div>
+
 </body>
 
 </html>

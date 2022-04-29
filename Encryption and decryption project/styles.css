@@ -1,6 +1,9 @@
 *{ 
     margin: 0; 
-    padding: 0; 
+    padding: 0;
+    background-color: black; 
+    color: white;
+    font-size: 30px;
 }
 a{
     color: yellow;
@@ -10,6 +13,37 @@ a{
 }
 input{
     padding: 0.33%;
+}
+button{
+    margin-top: 2.2%;
+    margin-left: 46%;
+    margin-bottom: 2.2%;
+    padding: 10px;
+    font-size: 20px;
+}
+#Encrypt{
+    padding: 5px;
+    margin-top: 4%;
+    margin-left: 10%;
+    border: 5px solid yellow;
+    width: 80%;
+}
+#Decrypt{
+    padding: 5px;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    border: 5px solid yellow;
+    width: 80%;
+}
+.inputwrap label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+#print{
+    font-size: 25px;
+    font-weight: bolder;
 }
 #title{
     padding: 2px;
